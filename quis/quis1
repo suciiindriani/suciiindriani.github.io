@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran lamun ombak</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #87301e ; /* Warna latar belakang header */
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header img {
+            width: 50px; /* Ukuran logo */
+            height: auto;
+            margin-right: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        main {
+            padding: 20px;
+        }
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        footer h3 {
+            margin-top: 0;
+        }
+        footer p, footer form {
+            margin: 10px 0;
+        }
+        footer form label {
+            display: block;
+            margin: 5px 0;
+        }
+        footer form input[type="text"], 
+        footer form input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer form input[type="radio"], 
+        footer form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        footer form input[type="submit"] {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer form input[type="submit"]:hover {
+            background-color: #ff4500;
+        }
+        footer div.social-icons {
+            margin-top: 15px;
+        }
+        footer div.social-icons a img {
+            margin: 0 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmz421lZvj5DY2os6njRkfSSCqZu-P7S3A3A&s" alt="Logo Restoran"> <!-- Ganti "logo.png" dengan path logo Anda -->
+        <h1>Restoran lamun ombak</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di Restoran lamun ombak</h2>
+            <p>Restoran ini menawarkan hidangan spesial yang terbuat dari bahan-bahan segar dan berkualitas. Kami berkomitmen untuk memberikan pengalaman kuliner terbaik kepada setiap pelanggan.</p>
+            <img src="https://rentalmobilpadang.co.id/wp-content/uploads/2019/06/Menu-RM-Lamun-Ombak.jpg" alt="Gambar Restoran" style="display: block; margin: 0 auto;">
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <!-- Tabel Menu -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Makanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://akcdn.detik.net.id/community/media/visual/2021/01/05/sop-iga-sapi-bening-khas-betawi_43.jpeg?w=700&q=90" alt="Salad Buah" width="100"></td>
+                        <td>sup iga</td>
+                        <td>Rp25.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://awsimages.detik.net.id/community/media/visual/2021/12/03/resep-udang-goreng-ketumbar-bawang_43.jpeg?w=650" alt="udang goreng" width="100"></td>
+                        <td>udang goreng</td>
+                        <td>Rp50.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.kurio.network/mIAqWOXcZMFdFh5hqRODW3yEFWk=/1200x900/filters:quality(80)/https://kurio-img.kurioapps.com/22/02/06/10d46313-c9bd-46f8-86a6-a098570a36a0.jpe" alt="ayam bakar" width="100"></td>
+                        <td>ayam bakar</td>
+                        <td>Rp25.000</td>
+                    </tr>
+                </tbody>
+            </table>
+ <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama minuman</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://www.blibli.com/friends-backend/wp-content/uploads/2024/03/B111465-1-Resep-Salad-Buah-Original-1024x538.jpg" alt="Salad Buah" width="100"></td>
+                        <td>Salad Buah</td>
+                        <td>Rp25.000</td>
+                    </tr><tr>
+                        <td><img src="https://asset.kompas.com/crops/hsrnlGnJjSvQmAEyoV_dmwBbUi4=/120x80:1000x667/1200x800/data/photo/2023/10/18/652fcf5eb1b28.jpg" alt="teh tarik" width="100"></td>
+                        <td>teh tarik</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td><img src="https://cdn1-production-images-kly.akamaized.net/IXwkGoxNo1fBdDms9BullOXvjLg=/1191x0:3681x3319/469x625/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2952663/original/065258500_1572335694-2019-10-29.jpg" alt="Jus mangga" width="100"></td>
+                        <td>Jus mangga</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimoni Pelanggan</h2>
+            <ol>
+                <li>"Makanan di sini luar biasa, pelayanan cepat dan ramah!" – avesya</li>
+                <li>"Tempat yang sempurna untuk makan bersama keluarga." – suci</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Kontak Kami</h3>
+        <p>Alamat: Jl. khatib sulaiman No. 99, ulak karang sel.,kec. padang utara,sumatra barat</p>
+        <p>Telepon: (+62) 7517052922 | Email: lamunombaksabanaminang@gmail.com</p>
+        
+        <!-- Formulir Reservasi -->
+        <h3>Formulir Reservasi</h3>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Tanggal Reservasi:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label>Jumlah Tamu:</label>
+            <input type="radio" id="2pax" name="guests" value="2" required> 2 Orang<br>
+            <input type="radio" id="4pax" name="guests" value="4"> 4 Orang<br>
+            <input type="radio" id="morepax" name="guests" value="more"> Lebih dari 4 Orang<br><br>
+
+            <input type="checkbox" id="terms" name="terms" required> Saya setuju dengan syarat dan ketentuan<br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+
+        <!-- Tautan Media Sosial -->
+        <div class="social-icons">
+            <h3>Ikuti Kami di Media Sosial</h3>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fp%2FRM-Lamun-Ombak-Khatib-Sulaiman-100054240171895%2F%3Flocale%3Did_ID" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/600px-Facebook_f_logo_%282019%29.svg.png" alt="facebook"width= "30" height="30">
+            <a href="https://www.instagram.com/lamunombak_resto/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/480px-Instagram_logo_2022.svg.png" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://twitter.com/restoranmu" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="Twitter" width="30" height="30">
+            </a>
+        </div>
+
+        <!-- Google Maps Iframe -->
+        <h3>Lokasi Kami</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126742.75873456056!2d106.78161636527056!3d-6.208763417806138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f15b9151f4d7%3A0xdee8ffcdcf57b3f5!2sJakarta!5e0!3m2!1sen!2sid!4v1606919404306!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+    </footer>
+
+</body>
+</html>
